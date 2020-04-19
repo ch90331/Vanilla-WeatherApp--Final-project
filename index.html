@@ -11,16 +11,20 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
-    <div class="container">
-        <p>
-          Taipei Porto Shanghai
+    <div class="weatherApp-wrapper">
+        <p class="city">
+          👶🏻 Taipei 🏠 Porto  🛫 Shanghai
         </p>
         <br />
         <form id="search-form">
           <div class="form-group">
-            <input type="text" id="form-text" placeholder="🔎 Enter a city" />
+            <input type="text" id="form-text" placeholder="Enter a city" />
             <input type="submit" value="GO🗺" class="go" />
           </div>
         </form>
@@ -35,21 +39,26 @@
         </p>
   
         <h2>
-            °C | °F
-          <small>
-            <div>
-              Real feel: 21 °C | °F
-            </div>
-          </small>
+          <span class="col-6">
+            🌞 Sunny
+          </span>
+          <span class="col-6">
+            <strong>
+              17
+            </strong>
+            <span class="units">°C | 
+              <a href="#">°F </a>
+            </span>
+          </span>
         </h2>
   
         <div>
-            <ul style="list-style-type:none">
+            <ul style="list-style-type:none" class="extrainfo">
                 <li>
-                    Humidity: %
+                    💧 Humidity: %
                 </li>
                 <li>
-                    Wind: km/h
+                    🌬 Wind: km/h
                 </li>
             </ul>
         </div>
@@ -57,34 +66,38 @@
         <div class="weather">
           <small>
             <div class="row">
-              <div class="col-2">
+              <div class="col-1">
                 Monday
               </div>
-              <div class="col-2">
+              <div class="col-1">
                 Tuesday
               </div>
-              <div class="col-2">
+              <div class="col-1">
                 Wednesday
               </div>
-              <div class="col-2">
+              <div class="col-1">
                 Thursday
               </div>
-              <div class="col-2">
+              <div class="col-1">
                 Friday
+              </div>
+              <div class="col-1">
+                Saturday
               </div>
             </div>
           </small>
           <div class="row">
-            <div class="col-2"><strong>24°</strong> 19°</div>
-            <div class="col-2"><strong>24°</strong> 21°</div>
-            <div class="col-2"><strong>28°</strong> 21°</div>
-            <div class="col-2"><strong>28°</strong> 21°</div>
-            <div class="col-2"><strong>29°</strong> 20°</div>
+            <div class="col-1"><strong>24°</strong> 19°</div>
+            <div class="col-1"><strong>24°</strong> 21°</div>
+            <div class="col-1"><strong>28°</strong> 21°</div>
+            <div class="col-1"><strong>28°</strong> 21°</div>
+            <div class="col-1"><strong>29°</strong> 20°</div>
+            <div class="col-1"><strong>24°</strong> 20°</div>
           </div>
         </div>
       </div>
       <p class="github">
-      <a href="https://github.com/ch90331/Ya-Ju--Weather-App" target="_blank">Open-source code</a>
+      <a href="https://github.com/ch90331/Vanilla-WeatherApp--Final-project" target="_blank">Open-source code</a>
       on GitHub by Ya-Ju Yu
       </p>
       <script src="src/city-weather.js"></script>
