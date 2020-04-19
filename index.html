@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌂Weather APP🌞</title>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="container">
+        <p>
+          Taipei Porto Shanghai
+        </p>
+        <br />
+        <form id="search-form">
+          <div class="form-group">
+            <input type="text" id="form-text" placeholder="🔎 Enter a city" />
+            <input type="submit" value="GO🗺" class="go" />
+          </div>
+        </form>
+        <span>
+          <button class="now" id="currentLocation">Current Location</button>
+        </span>
+        <h1>
+          Porto
+        </h1>
+        <p>
+          📆 Sunday March 22, 2020 ⏲ 01:34
+        </p>
+  
+        <h2>
+            °C | °F
+          <small>
+            <div>
+              Real feel: 21 °C | °F
+            </div>
+          </small>
+        </h2>
+  
+        <div>
+            <ul style="list-style-type:none">
+                <li>
+                    Humidity: %
+                </li>
+                <li>
+                    Wind: km/h
+                </li>
+            </ul>
+        </div>
+  
+        <div class="weather">
+          <small>
+            <div class="row">
+              <div class="col-2">
+                Monday
+              </div>
+              <div class="col-2">
+                Tuesday
+              </div>
+              <div class="col-2">
+                Wednesday
+              </div>
+              <div class="col-2">
+                Thursday
+              </div>
+              <div class="col-2">
+                Friday
+              </div>
+            </div>
+          </small>
+          <div class="row">
+            <div class="col-2"><strong>24°</strong> 19°</div>
+            <div class="col-2"><strong>24°</strong> 21°</div>
+            <div class="col-2"><strong>28°</strong> 21°</div>
+            <div class="col-2"><strong>28°</strong> 21°</div>
+            <div class="col-2"><strong>29°</strong> 20°</div>
+          </div>
+        </div>
+      </div>
+      <p class="github">
+      <a href="https://github.com/ch90331/Ya-Ju--Weather-App" target="_blank">Open-source code</a>
+      on GitHub by Ya-Ju Yu
+      </p>
+      <script src="src/city-weather.js"></script>
+    </body>
+</body>
+</html>
