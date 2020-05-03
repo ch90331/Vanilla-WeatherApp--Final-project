@@ -63,5 +63,7 @@
     color: #006ec5;
     text-align: center;
     font-size: 23px;
+    position: relative;
+    left: 60px;
   }
   
